@@ -1,0 +1,38 @@
+/// In the name of ALLAH
+
+#include<bits/stdc++.h>
+using namespace std;
+#define endl "\n"
+#define MOD 1000000007
+
+
+int main()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL); cout.tie(NULL);
+    //cout<<fixed<<setprecision(2);
+    //memset(dp,-1,sizeof(dp));
+    int n;
+    cin>>n;
+    int k=n;
+    int ans=0;
+    while(k!=0)
+    {
+        int rem=k%10;
+        k/=10;
+        ans+=(rem*rem*rem);
+    }
+    if(ans==n)
+    {
+
+        cout<<"Armstrong"<<endl;
+    }
+    else
+    {
+        cout<<"NO"<<endl;
+    }
+
+
+
+}
+
